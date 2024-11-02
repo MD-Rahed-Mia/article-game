@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test project</title>
+
+    <style>
+      .timer-container {
+        width: fit-content;
+        height: 40px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        background: rgba(61, 150, 139, 0.598);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        position: absolute;
+        bottom: 3rem;
+        right: 3rem;
+      }
+
+      .timer-container.active {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">play game</button>
+    <div id="timer" class="timer-container">00:00</div>
+    <div id="website"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
